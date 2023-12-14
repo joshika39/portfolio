@@ -20,7 +20,10 @@ export const getStaticProps = async () => {
     const data = await res.json();
 
     return {
-        props: { scores: data },
+        props: {
+            scores: data
+        },
+        revalidate: 5
     };
 
 }
