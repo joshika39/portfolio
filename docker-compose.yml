@@ -1,0 +1,11 @@
+version: '3'
+
+name: "portfolio"
+
+services:
+  app:
+    image: joshika39/portfolio:latest
+    container_name: portfolio
+    restart: always
+    ports:
+      - "1111:3000"
