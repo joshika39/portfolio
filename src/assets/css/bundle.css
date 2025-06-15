@@ -1,14 +1,22 @@
 @font-face {
-  font-family: "JetBrains Mono";
-  src: url("../fonts/JetBrainsMono-Regular.woff2") format("woff2");
+  font-family: "San Francisco Display Regular";
+  src: url("../fonts/sf-pro-display-regular.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "JetBrains Mono";
-  src: url("../fonts/JetBrainsMono-Bold.woff2") format("woff2");
+  font-family: "San Francisco Text Regular";
+  src: url("../fonts/sf-pro-text-regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "San Francisco Display Semibold";
+  src: url("../fonts/sf-pro-display-semibold.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -24,67 +32,76 @@
   --purple: #c792ea;
   --pink: #ff79c6;
   --gray: #b0bec5;
-  --dark-gray: #546e7a;
-  --light-gray: #eceff1;
-  --white: #ffffff;
+  --dark-gray: #363636;
+  --light-gray: #dadada;
+  --white: #eaeaea;
   --black: #263238;
 }
 
 @media (prefers-color-scheme: light) {
   :root {
-    --dark-gray: #333;
-    --light-gray: #f0f0f0;
+    --cyan: #48b9a9;
+    --purple: #976dfc;
+    --blue: #364cc5;
+    --background-color: var(--white);
+    --text-color: var(--black);
   }
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --dark-gray: #e0e0e0;
-    --light-gray: #1e1e1e;
+    --background-color: var(--black);
+    --text-color: var(--white);
   }
 }
 
 html {
-  font-family: "JetBrains Mono", monospace;
-  font-size: 16px;
-  line-height: 1.7;
-  color: #1a1a1a;
-  background: #fff;
+  font-family: "San Francisco Text Regular", sans-serif;
+  color: var(--text-color);
+  background: var(--background-color);
   padding: 2rem;
   max-width: 720px;
   margin: auto;
+  font-size: 16px;
+  line-height: 1.6;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
-  line-height: 1.3;
-  margin-top: 1.75em;
-  margin-bottom: 0.5em;
+  font-size: 1.2rem;
+  line-height: 1.2em;
+  margin-top: 1.5rem;
+  margin-bottom: 0.2rem;
 }
 
-h1 {
-  font-size: 2rem;
+h1::before {
+  content: "# ";
+  color: var(--gray);
 }
 
-h2 {
-  font-size: 1.75rem;
+h2::before {
+  content: "## ";
+  color: var(--gray);
 }
 
-h3 {
-  font-size: 1.5rem;
+h3::before {
+  content: "### ";
+  color: var(--gray);
 }
 
-h4 {
-  font-size: 1.25rem;
+h4::before {
+  content: "#### ";
+  color: var(--gray);
 }
 
-h5 {
-  font-size: 1rem;
+h5::before {
+  content: "##### ";
+  color: var(--gray);
 }
 
-h6 {
-  font-size: 0.875rem;
-  color: var(--dark-gray);
+h6::before {
+  content: "###### ";
+  color: var(--gray);
 }
 
 ul {
@@ -122,23 +139,22 @@ ol {
 }
 
 a {
-  color: #005cc5;
-  text-decoration: none;
+  color: var(--blue);
 }
 
 a:hover {
-  text-decoration: underline;
+  filter: brightness(1.2);
 }
 
 code {
-  background: #f0f0f0;
+  background: var(--light-gray);
   padding: 0.2em 0.4em;
   border-radius: 4px;
   font-size: 0.95em;
 }
 
 pre {
-  background: #f0f0f0;
+  background: var(--gray);
   padding: 1em;
   overflow-x: auto;
   border-radius: 6px;
@@ -146,7 +162,7 @@ pre {
 }
 
 blockquote {
-  border-left: 4px solid #ccc;
+  border-left: 4px solid var(--light-gray);
   padding-left: 1em;
   color: #666;
   font-style: italic;
@@ -154,7 +170,7 @@ blockquote {
 
 hr {
   border: none;
-  border-top: 1px solid #ddd;
+  border-top: 1px solid var(--gray);
   margin: 2em 0;
 }
 
@@ -166,8 +182,8 @@ img {
 }
 
 .project-tag {
-  font-size: 0.85em;
-  color: #999;
+  font-size: 0.9em;
+  color: var(--dark-gray);
   margin-left: 0.25em;
 }
 
@@ -243,12 +259,12 @@ img {
   }
 
   a {
-    color: #81a1c1;
+    color: var(--cyan);
   }
 
   code {
-    background: #1e1e1e;
-    color: #dcdcdc;
+    background: var(--dark-gray);
+    color: var(--light-gray);
   }
 
   pre {
@@ -271,5 +287,9 @@ img {
 
   ul li::before {
     color: #666;
+  }
+
+  .project-tag {
+    color: #999;
   }
 }
