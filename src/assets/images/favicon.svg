@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="1000" height="1000"><style>
+    #light-icon {
+      display: inline;
+    }
+    #dark-icon {
+      display: none;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      #light-icon {
+        display: none;
+      }
+      #dark-icon {
+        display: inline;
+      }
+    }
+  </style><g id="light-icon"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="1000" height="1000"><g><g transform="matrix(1.953125,0,0,1.953125,0,0)"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="512" height="512"><svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_1_2)">
+<rect width="512" height="512" rx="50" fill="#141414"></rect>
+<path d="M104.761 387.571V346.429H144.075V375.686H202.59V134.314H150.475V95H241.904V387.571C241.904 395.19 239.161 401.743 233.675 407.229C228.494 412.41 222.094 415 214.475 415H132.19C124.571 415 118.018 412.41 112.533 407.229C107.352 401.743 104.761 395.19 104.761 387.571ZM269.214 415V95H308.529V235.343H367.043V95H406.357V415H367.043V274.657H308.529V415H269.214Z" fill="#5BE8D5"></path>
+</g>
+<defs>
+<clipPath id="clip0_1_2">
+<rect width="512" height="512" fill="white"></rect>
+</clipPath>
+</defs>
+</svg></svg></g></g></svg></g><g id="dark-icon"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="1000" height="1000"><g><g transform="matrix(1.953125,0,0,1.953125,0,0)"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="512" height="512"><svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_1_2)">
+<rect width="512" height="512" rx="50" fill="#F2F2F2"></rect>
+<path d="M104.761 387.571V346.429H144.075V375.686H202.59V134.314H150.475V95H241.904V387.571C241.904 395.19 239.161 401.743 233.675 407.229C228.494 412.41 222.094 415 214.475 415H132.19C124.571 415 118.018 412.41 112.533 407.229C107.352 401.743 104.761 395.19 104.761 387.571ZM269.214 415V95H308.529V235.343H367.043V95H406.357V415H367.043V274.657H308.529V415H269.214Z" fill="#009884"></path>
+</g>
+<defs>
+<clipPath id="clip0_1_2">
+<rect width="512" height="512" fill="white"></rect>
+</clipPath>
+</defs>
+</svg></svg></g></g></svg></g></svg>
