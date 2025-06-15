@@ -1,0 +1,275 @@
+@font-face {
+  font-family: "JetBrains Mono";
+  src: url("../fonts/JetBrainsMono-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "JetBrains Mono";
+  src: url("../fonts/JetBrainsMono-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --cyan: #5be8d5;
+  --blue: #4f78d2;
+  --green: #3fbf7f;
+  --yellow: #f0c674;
+  --orange: #f78c6c;
+  --red: #ff5370;
+  --purple: #c792ea;
+  --pink: #ff79c6;
+  --gray: #b0bec5;
+  --dark-gray: #546e7a;
+  --light-gray: #eceff1;
+  --white: #ffffff;
+  --black: #263238;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --dark-gray: #333;
+    --light-gray: #f0f0f0;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --dark-gray: #e0e0e0;
+    --light-gray: #1e1e1e;
+  }
+}
+
+html {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #1a1a1a;
+  background: #fff;
+  padding: 2rem;
+  max-width: 720px;
+  margin: auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  line-height: 1.3;
+  margin-top: 1.75em;
+  margin-bottom: 0.5em;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.75rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+
+h5 {
+  font-size: 1rem;
+}
+
+h6 {
+  font-size: 0.875rem;
+  color: var(--dark-gray);
+}
+
+ul {
+  list-style: none;
+  padding-left: 1.5em;
+}
+
+ul li::before {
+  content: "*";
+  display: inline-block;
+  width: 1em;
+  margin-left: -1.5em;
+  color: var(--light-gray);
+}
+
+ul {
+  padding-left: 2ch;
+}
+
+ul li::before {
+  margin-left: -2ch;
+}
+
+li {
+  margin-bottom: 0.5em;
+}
+
+p, ul, ol, blockquote, pre, table {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+ol {
+  padding-left: 1.5em;
+}
+
+a {
+  color: #005cc5;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+code {
+  background: #f0f0f0;
+  padding: 0.2em 0.4em;
+  border-radius: 4px;
+  font-size: 0.95em;
+}
+
+pre {
+  background: #f0f0f0;
+  padding: 1em;
+  overflow-x: auto;
+  border-radius: 6px;
+  font-size: 0.95em;
+}
+
+blockquote {
+  border-left: 4px solid #ccc;
+  padding-left: 1em;
+  color: #666;
+  font-style: italic;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #ddd;
+  margin: 2em 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 1em 0;
+}
+
+.project-tag {
+  font-size: 0.85em;
+  color: #999;
+  margin-left: 0.25em;
+}
+
+.tech-badge {
+  display: inline-block;
+  font-size: 0.70em;
+  padding: 0.1em 0.5em;
+  margin: 0.1em 0.2em;
+  border-radius: 9999px;
+  border: 1px solid;
+  font-family: "JetBrains Mono", monospace;
+}
+
+.tech-badge.cyan {
+  color: var(--cyan);
+  border-color: var(--cyan);
+  background-color: rgba(var(--cyan), 0.2);
+}
+
+.tech-badge.blue {
+  color: var(--blue);
+  border-color: var(--blue);
+  background-color: rgba(var(--blue), 0.2);
+}
+
+.tech-badge.green {
+  color: var(--green);
+  border-color: var(--green);
+  background-color: rgba(var(--green), 0.2);
+}
+
+.tech-badge.yellow {
+  color: var(--yellow);
+  border-color: var(--yellow);
+  background-color: rgba(var(--yellow), 0.2);
+}
+
+.tech-badge.orange {
+  color: var(--orange);
+  border-color: var(--orange);
+  background-color: rgba(var(--orange), 0.2);
+}
+
+.tech-badge.red {
+  color: var(--red);
+  border-color: var(--red);
+  background-color: rgba(var(--red), 0.2);
+}
+
+.tech-badge.purple {
+  color: var(--purple);
+  border-color: var(--purple);
+  background-color: rgba(var(--purple), 0.2);
+}
+
+.tech-badge.pink {
+  color: var(--pink);
+  border-color: var(--pink);
+  background-color: rgba(var(--pink), 0.2);
+}
+
+.tech-badge.gray {
+  color: var(--gray);
+  border-color: var(--gray);
+  background-color: rgba(var(--gray), 0.2);
+}
+
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color: #e0e0e0;
+    background: #121212;
+  }
+
+  a {
+    color: #81a1c1;
+  }
+
+  code {
+    background: #1e1e1e;
+    color: #dcdcdc;
+  }
+
+  pre {
+    background: #1e1e1e;
+    color: #dcdcdc;
+  }
+
+  blockquote {
+    border-left-color: #444;
+    color: #aaa;
+  }
+
+  hr {
+    border-top-color: #333;
+  }
+
+  img {
+    opacity: 0.95;
+  }
+
+  ul li::before {
+    color: #666;
+  }
+}
