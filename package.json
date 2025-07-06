@@ -10,7 +10,7 @@
     "build": "rm -rf _site && eleventy"
   },
   "keywords": [],
-  "author": "",
+  "author": "joshika39",
   "license": "ISC",
   "packageManager": "pnpm@10.7.0",
   "dependencies": {

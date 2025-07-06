@@ -12,6 +12,9 @@ export default function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/assets/images/*.ico");
   eleventyConfig.addPassthroughCopy("src/assets/css");
   eleventyConfig.addPassthroughCopy("src/manifest.json");
+  eleventyConfig.addPassthroughCopy("src/robots.txt");
+  eleventyConfig.addPassthroughCopy("src/resume.txt");
+  eleventyConfig.addPassthroughCopy("src/resume.md");
 
   eleventyConfig.addFilter("cssmin", function (code) {
     return new CleanCSS({}).minify(code).styles;
