@@ -18,7 +18,7 @@ on my [GitHub](https://github.com/joshika39) profile.
 - [eslint-plugin-clean-code](https://github.com/kougen/eslint-plugin-clean-code) – an ESLint plugin for enforcing clean code principles in JavaScript projects.
 - [japanese-cinema](https://github.com/joshika39/japanese-cinema) [unmaintained] – a ThreeJS 3D experience in a Japanese cinema to view the airing trailers in 2020.
 - [sms-automation-backend](https://github.com/kougen/sms-automation-backend) [unmaintained] – a FastAPI backend for automating SMS sending and receiving.
-- [email-signer-frontend](https://github.com/kougen/email-signer-frontend) - a Next.js project, that serves as a client for the `email-signer-api`
+- [email-signer-frontend](https://github.com/kougen/email-signer-frontend) - a Next.js project, that serves as a client for the `email-signer-api`.
 - [email-signer-api](https://github.com/kougen/email-signer-api) [archived] - a FastAPI backend for sending RSA signed emails from a template. This project is being rewritten in `C#` for better reliability, scalability and it's being extended as a marketing platform that combines more channels (Email, SMS, etc.) together. That project will combine the functionalities of the last 2 repositories including this.
 
 ## Contributions
