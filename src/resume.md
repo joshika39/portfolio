@@ -9,10 +9,10 @@ on my [GitHub](https://github.com/joshika39) profile.
 
 ## Open Source Projects
 
-- [nextjs-toolkit](https://github.com/joshika39/nextjs-toolkit) – a set of components and styles for a Next.JS project
+- [nextjs-toolkit](https://github.com/joshika39/nextjs-toolkit) – a set of components and styles for a Next.js project
 - [dotnet-core](https://github.com/kougen/dotnet-core) – a NuGet package for making your life with .NET Core easier.
 - [dotnet-game-framework](https://github.com/kougen/dotnet-game-framework) – framework for easily building 2D board
-  games with WPF, MAUI and Forms.
+  games with WPF, MAUI, and Forms.
 - [jsonservice](https://github.com/kougen/jsonservice) – a Python package for managing JSON data easily.
 - [py-repositories](https://github.com/kougen/py-repositories) – a Python package using SOLID principles to manage
   repositories and data.
@@ -30,16 +30,16 @@ on my [GitHub](https://github.com/joshika39) profile.
   automating SMS sending and receiving.
 - [email-signer-frontend](https://github.com/kougen/email-signer-frontend) - a Next.js project, that serves as a client
   for the `email-signer-api`.
-- [email-signer-api](https://github.com/kougen/email-signer-api) [archived] - a FastAPI backend for sending RSA signed
-  emails from a template. This project is being rewritten in `C#` for better reliability, scalability and it's being
-  extended as a marketing platform that combines more channels (Email, SMS, etc.) together. That project will combine
-  the functionalities of the last 2 repositories including this.
+- [email-signer-api](https://github.com/kougen/email-signer-api) [archived] – a FastAPI backend for sending RSA signed
+  emails from a template. This project is being rewritten in `C#` for better reliability, scalability, and it's being
+  extended as a marketing platform that combines more channels (Email, SMS, etc.). That project will combine
+  the functionalities of the last two repositories, including this.
 
 ## Contributions
 
 - [osu!](https://github.com/ppy/osu) – Contributed to the `osu!` game client, focusing on improving the look to be more
   in line with the website.
-- [Floorp Website](https://github.com/Floorp-Projects/web) - Lead dev to the `Floorp` browser's website, enhancing its
+- [Floorp Website](https://github.com/Floorp-Projects/web) – Lead dev to the `Floorp` browser's website, enhancing its
   design and functionality.
 - [Skills Service](https://github.com/NationalSecurityAgency/skills-service) – Contributed to the `Skills Service`, a
   project by the National Security Agency.
