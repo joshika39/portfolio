@@ -15,6 +15,10 @@ const images = [
     alt: "A cute orange cat.",
     name: "orange-cat.jpg"
   },
+  {
+    alt: "A gradient background for wallpaper.",
+    name: "wp-gradient-2.jpg"
+  }
 ]
 
 const imageList = document.querySelector("#photography-gallery");
