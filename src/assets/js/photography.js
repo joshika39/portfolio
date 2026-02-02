@@ -5,21 +5,37 @@ const imagesPath = "/assets/images/portfolio/";
 const images = [
   {
     alt: "HYROX Team in a break.",
-    name: "ahoy-captain.jpg"
+    name: "ahoy-captain.jpg",
   },
   {
     alt: "Bilbao in sunshine.",
-    name: "sunshine-bilbao.jpg"
+    name: "sunshine-bilbao.jpg",
   },
   {
     alt: "A cute orange cat.",
-    name: "orange-cat.jpg"
+    name: "orange-cat.jpg",
   },
   {
     alt: "A gradient background for wallpaper.",
-    name: "wp-gradient-2.jpg"
+    name: "wp-gradient-2.jpg",
+  },
+  {
+    alt: "A winter walk in Budapest.",
+    name: "bp-winter-1.jpg",
+  },
+  {
+    alt: "Spring is coming.",
+    name: "spring-is-coming.jpg",
+  },
+  {
+    alt: "A rainbow on the concrete.",
+    name: "concrete-rainbow.jpg",
+  },
+  {
+    alt: "On the Margaret Bridge in Budapest.",
+    name: "margaret-bridge-bp.jpg",
   }
-]
+];
 
 const imageList = document.querySelector("#photography-gallery");
 console.log(imageList);
@@ -38,4 +54,3 @@ for (let i = 0; i < images.length; i++) {
 
   imageList.appendChild(linkElement);
 }
-
