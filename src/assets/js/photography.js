@@ -33,7 +33,7 @@ const images = [
   },
   {
     alt: "On the Margaret Bridge in Budapest.",
-    name: "margaret-bridge-bp.jpg",
+    name: "margaret-bridge-1.jpg",
   }
 ];
 
