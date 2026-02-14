@@ -1,49 +1,57 @@
 console.log("Photography script loaded.");
 
-const imagesPath = "/assets/images/portfolio/";
+const imagesPath = "/assets/images/portfolio";
 
 const images = [
   {
     alt: "HYROX Team in a break.",
-    name: "ahoy-captain.jpg",
+    name: "ahoy-captain",
+    extension: "jpg",
   },
   {
     alt: "Bilbao in sunshine.",
-    name: "sunshine-bilbao.jpg",
+    name: "sunshine-bilbao",
+    extension: "jpg",
   },
   {
     alt: "A cute orange cat.",
-    name: "orange-cat.jpg",
+    name: "orange-cat",
+    extension: "jpg",
   },
   {
     alt: "A gradient background for wallpaper.",
-    name: "wp-gradient-2.jpg",
+    name: "wp-gradient-2",
+    extension: "jpg",
   },
   {
     alt: "A winter walk in Budapest.",
-    name: "bp-winter-1.jpg",
+    name: "bp-winter-1",
+    extension: "jpg",
   },
   {
     alt: "Spring is coming.",
-    name: "spring-is-coming.jpg",
+    name: "spring-is-coming",
+    extension: "jpg",
   },
   {
     alt: "A rainbow on the concrete.",
-    name: "concrete-rainbow.jpg",
+    name: "concrete-rainbow",
+    extension: "jpg",
   },
   {
     alt: "On the Margaret Bridge in Budapest.",
-    name: "margaret-bridge-1.jpg",
+    name: "margaret-bridge-1",
+    extension: "jpg",
   }
 ];
 
 const imageList = document.querySelector("#photography-gallery");
-console.log(imageList);
 
 for (let i = 0; i < images.length; i++) {
+  const image = images[i];
   const imageElement = document.createElement("img");
-  imageElement.src = imagesPath + images[i].name;
-  imageElement.alt = images[i].alt;
+  imageElement.src = `${imagesPath}/${image.name}-thumb.${image.extension}`;
+  imageElement.alt = image.alt;
 
   console.log(imageElement);
 
