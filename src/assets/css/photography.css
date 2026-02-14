@@ -63,8 +63,8 @@ html {
 }
 
 #photo-modal img {
-    height: 85%;
-    width: auto;
+    max-width: 90%;
+    max-height: 75vh;
     border-radius: 0.5rem;
     box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
     background-color: #a2a2a2;
@@ -81,7 +81,8 @@ html {
     z-index: 1001;
     position: absolute;
     top: 1rem;
-    right: 1rem;
+    right: 1.5rem;
+    line-height: 1;
     font-size: 2rem;
     color: white;
     cursor: pointer;
