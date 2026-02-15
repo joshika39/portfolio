@@ -1,4 +1,4 @@
-import {constructFullPath} from "./lib.js";
+import {constructFullPath} from "../lib.js";
 
 const photos = [
   {

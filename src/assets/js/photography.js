@@ -1,6 +1,6 @@
 import {createImageGallery} from "./lib.js";
-import {loadPhotosWithExif} from "./photos.js";
-import illustrations from "./illustrations.js";
+import {loadPhotosWithExif} from "./data/photos.js";
+import illustrations from "./data/illustrations.js";
 
 createImageGallery(document.querySelector("#photography-gallery"), await loadPhotosWithExif());
 
