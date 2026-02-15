@@ -1,4 +1,6 @@
-const images = [
+import {constructFullPath} from "./lib.js";
+
+const photos = [
   {
     alt: "HYROX Team in a break.",
     name: "ahoy-captain",
@@ -47,24 +49,41 @@ const images = [
     description: "ducks.",
     extension: "jpg",
   },
-  {
-    alt: "A gradient background for wallpaper.",
-    name: "wp-gradient-2",
-    description: "My wallpaper for my MacBook",
-    extension: "jpg",
-  },
-  {
-    alt: "Another gradient background for wallpaper.",
-    name: "wp-gradient-3-light",
-    description: "Another gradient I use for wallpaper.",
-    extension: "jpg",
-  },
-  {
-    alt: "A darl gradient background for wallpaper.",
-    name: "wp-gradient-3-dark",
-    description: "My dark wallpaper for my MacBook",
-    extension: "jpg",
-  },
 ];
 
-export default images;
+async function extractExifData(image) {
+  const path = image.fullPath;
+
+  try {
+    const response = await fetch(path);
+    if (!response.ok) {
+      console.warn(`Failed to fetch image at ${path}: ${response.statusText}`);
+      return image;
+    }
+
+    const buffer = await response.arrayBuffer();
+    if (buffer.byteLength === 0) {
+      console.warn(`Image at ${path} is empty.`);
+      return image;
+    }
+
+    const slice = buffer.slice(0, 65635);
+
+    const parser = window.ExifParser.create(slice);
+    const result = parser.parse();
+
+    return {
+      ...image,
+      exif: result,
+    };
+  } catch (error) {
+    console.error("Error fetching image:", error);
+    return image;
+  }
+}
+
+export async function loadPhotosWithExif() {
+  return Promise.all(
+    photos.map(constructFullPath).map(extractExifData)
+  );
+}

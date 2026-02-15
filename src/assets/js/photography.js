@@ -1,12 +1,7 @@
-import images from "./images.js";
-
-const imagesPath = "/assets/images/portfolio";
-
-const imageList = document.querySelector("#photography-gallery");
+import {loadPhotosWithExif} from "./photos.js";
+import illustrations from "./illustrations.js";
 
 const onImageClick = (image) => {
-  console.log(`Image clicked: ${image.name}`);
-  const fullImageUrl = `${imagesPath}/${image.name}.${image.extension}`;
   const modal = document.querySelector("#photo-modal");
   if (!modal) {
     return;
@@ -20,7 +15,7 @@ const onImageClick = (image) => {
   })
 
   const modalImage = document.createElement("img");
-  modalImage.src = fullImageUrl;
+  modalImage.src = image.fullPath;
   modalImage.alt = image.alt;
 
   const modalDescription = document.createElement("p");
@@ -41,19 +36,29 @@ const onImageClick = (image) => {
   modal.style.display = "flex";
 }
 
-for (let i = 0; i < images.length; i++) {
-  const image = images[i];
-  const imageElement = document.createElement("img");
-  imageElement.src = `${imagesPath}/${image.name}-thumb.${image.extension}`;
-  imageElement.alt = image.alt;
-  imageElement.addEventListener("click", () => onImageClick(image));
+function createImageGallery(element, images) {
+  if (!element) {
+    return;
+  }
 
-  const descriptionElement = document.createElement("p");
-  descriptionElement.textContent = image.description;
+  for (let i = 0; i < images.length; i++) {
+    const image = images[i];
+    const imageElement = document.createElement("img");
+    imageElement.src = image.thumbnail;
+    imageElement.alt = image.alt;
+    imageElement.addEventListener("click", () => onImageClick(image));
 
-  const linkElement = document.createElement("li");
-  linkElement.appendChild(imageElement);
-  linkElement.appendChild(descriptionElement);
+    const descriptionElement = document.createElement("p");
+    descriptionElement.textContent = image.description;
 
-  imageList.appendChild(linkElement);
+    const linkElement = document.createElement("li");
+    linkElement.appendChild(imageElement);
+    linkElement.appendChild(descriptionElement);
+
+    element.appendChild(linkElement);
+  }
 }
+
+createImageGallery(document.querySelector("#photography-gallery"), await loadPhotosWithExif());
+
+createImageGallery(document.querySelector("#illustrations-gallery"), illustrations)
