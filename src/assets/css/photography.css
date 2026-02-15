@@ -95,11 +95,11 @@ html {
 }
 
 #photo-modal img {
-    max-width: 90%;
-    max-height: 75vh;
+    max-width: 95%;
+    max-height: 85%;
     border-radius: 0.5rem;
-    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
-    background-color: #a2a2a2;
+    background-color: rgba(255, 255, 255, 0.16);
+    object-fit: contain;
 }
 
 #photo-modal p {
@@ -120,4 +120,14 @@ html {
     cursor: pointer;
     background: none;
     border: none;
+}
+
+#modal-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 95%;
+    max-height: 90%;
+    justify-content: center;
 }

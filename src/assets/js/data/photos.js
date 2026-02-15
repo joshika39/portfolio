@@ -58,7 +58,7 @@ const photos = [
 ];
 
 async function extractExifData(image) {
-  const path = image.fullPath;
+  const path = image.thumbnail;
 
   try {
     const response = await fetch(path);

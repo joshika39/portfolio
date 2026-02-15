@@ -49,6 +49,10 @@ const onImageClick = (image) => {
     }
   })
 
+  const content = document.createElement("div");
+  content.id = "modal-content";
+
+
   const modalImage = document.createElement("img");
   modalImage.src = image.fullPath;
   modalImage.alt = image.alt;
@@ -64,8 +68,9 @@ const onImageClick = (image) => {
     modal.innerHTML = "";
   });
 
-  modal.appendChild(modalImage);
-  modal.appendChild(modalDescription);
+  content.appendChild(modalImage);
+  content.appendChild(modalDescription);
+  modal.appendChild(content);
   modal.appendChild(closeButton);
 
   modal.style.display = "flex";
