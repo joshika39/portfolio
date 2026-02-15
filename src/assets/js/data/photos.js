@@ -46,7 +46,7 @@ const photos = [
   {
     alt: "On the Margaret Bridge in Budapest.",
     name: "margaret-bridge-1",
-    description: "Goldest hour on the Margaret Bridge in Budapest.",
+    description: "Most 'Golden-est' hour on the Margaret Bridge in Budapest.",
     extension: "jpg",
   },
   {
