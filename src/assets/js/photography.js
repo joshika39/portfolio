@@ -56,10 +56,31 @@ function createImageGallery(element, images) {
 
       const makeElement = document.createElement("p");
       makeElement.classList.add("camera-model");
-      makeElement.textContent = image.exif.Model;
+      let text = image.exif.Model;
+      if (image.exif.Make && !text.toLowerCase().startsWith(image.exif.Make.toLowerCase())) {
+        text = `${image.exif.Make} ${text}`;
+      }
+      makeElement.textContent = text;
       modelInfo.appendChild(makeElement);
 
       linkElement.appendChild(modelInfo);
+
+      const lensInfo = document.createElement("div");
+      lensInfo.classList.add("camera-info");
+
+      const lensIcon = document.createElement("img");
+      lensIcon.src = "/assets/icons/lens.svg";
+      lensIcon.alt = "Lens Icon";
+      lensInfo.appendChild(lensIcon);
+
+      const lensElement = document.createElement("p");
+      lensElement.classList.add("camera-model");
+      let lensContent = image.exif.LensModel || "Unknown Lens";
+      lensContent = lensContent.replace(image.exif.Model, "").trim();
+      lensElement.textContent = lensContent;
+      lensInfo.appendChild(lensElement);
+
+      linkElement.appendChild(lensInfo);
     }
 
     const imageElement = document.createElement("img");
