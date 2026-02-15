@@ -8,6 +8,12 @@ const photos = [
     extension: "jpg",
   },
   {
+    alt: "Sun shining behind a HYROX wallball.",
+    name: "wallball-in-the-sun",
+    description: "SUNNY wallball",
+    extension: "jpg",
+  },
+  {
     alt: "Bilbao in sunshine.",
     name: "sunshine-bilbao",
     description: "A sunny roundabout in Bilbao.",
@@ -71,10 +77,9 @@ async function extractExifData(image) {
 
     const parser = window.ExifParser.create(slice);
     const result = parser.parse();
-
     return {
       ...image,
-      exif: result,
+      exif: result.tags || undefined,
     };
   } catch (error) {
     console.error("Error fetching image:", error);

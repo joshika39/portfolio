@@ -43,17 +43,37 @@ function createImageGallery(element, images) {
 
   for (let i = 0; i < images.length; i++) {
     const image = images[i];
+    const linkElement = document.createElement("li");
+
+    if (image.exif && image.exif.Model) {
+      const modelInfo = document.createElement("div");
+      modelInfo.classList.add("camera-info");
+
+      const cameraIcon = document.createElement("img");
+      cameraIcon.src = "/assets/icons/camera.svg";
+      cameraIcon.alt = "Camera Icon";
+      modelInfo.appendChild(cameraIcon);
+
+      const makeElement = document.createElement("p");
+      makeElement.classList.add("camera-model");
+      makeElement.textContent = image.exif.Model;
+      modelInfo.appendChild(makeElement);
+
+      linkElement.appendChild(modelInfo);
+    }
+
     const imageElement = document.createElement("img");
     imageElement.src = image.thumbnail;
     imageElement.alt = image.alt;
+    imageElement.classList.add("gallery-image");
     imageElement.addEventListener("click", () => onImageClick(image));
+    linkElement.appendChild(imageElement);
 
     const descriptionElement = document.createElement("p");
+    descriptionElement.classList.add("description");
     descriptionElement.textContent = image.description;
-
-    const linkElement = document.createElement("li");
-    linkElement.appendChild(imageElement);
     linkElement.appendChild(descriptionElement);
+
 
     element.appendChild(linkElement);
   }
