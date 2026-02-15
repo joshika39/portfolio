@@ -87,13 +87,8 @@ async function extractExifData(image) {
   }
 }
 
-export function loadPhotosWithExif(callback) {
-  Promise.all(
-    photos.map(constructFullPath).map(extractExifData)
-  ).then(loadedPhotos => {
-    if (callback) {
-      callback(loadedPhotos);
-    }
-  });
-  return photos.map(constructFullPath);
+export const initialPhotos = photos.map(constructFullPath);
+
+export async function loadPhotosWithExif() {
+  return Promise.all(initialPhotos.map(extractExifData));
 }
