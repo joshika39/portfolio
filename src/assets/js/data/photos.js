@@ -55,6 +55,12 @@ const photos = [
     description: "ducks.",
     extension: "jpg",
   },
+  {
+    alt: "oil and wine.",
+    name: "oil-and-wine",
+    description: "what?",
+    extension: "jpg",
+  }
 ];
 
 async function extractExifData(image) {
