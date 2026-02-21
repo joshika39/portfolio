@@ -1,10 +1,10 @@
-import {createImageGallery} from "./lib.js";
-import {loadPhotosWithExif, initialPhotos} from "./data/photos.js";
+import {createImageGallery, constructFullPath} from "./lib.js";
 import illustrations from "./data/illustrations.js";
+import photosData from "./data/photos.json" with { type: "json" };
 
-
+const photos = photosData.map(constructFullPath);
 
 createImageGallery(document.querySelector("#illustrations-gallery"), illustrations)
-createImageGallery(document.querySelector("#photography-gallery"), await loadPhotosWithExif());
+createImageGallery(document.querySelector("#photography-gallery"), photos);
 
 

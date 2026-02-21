@@ -1,0 +1,142 @@
+[
+  {
+    "alt": "HYROX Team in a break.",
+    "name": "ahoy-captain",
+    "description": "HYROX Team in a break.",
+    "extension": "jpg",
+    "exif": {
+      "make": "Canon",
+      "model": "Canon EOS R6",
+      "lensMake": null,
+      "lensModel": "RF70-200mm F2.8 L IS USM",
+      "lat": null,
+      "lon": null
+    }
+  },
+  {
+    "alt": "Sun shining behind a HYROX wallball.",
+    "name": "wallball-in-the-sun",
+    "description": "SUNNY wallball",
+    "extension": "jpg",
+    "exif": {
+      "make": "FUJIFILM",
+      "model": "X-H2",
+      "lensMake": "FUJIFILM",
+      "lensModel": "XF16-50mmF2.8-4.8 R LM WR",
+      "lat": null,
+      "lon": null
+    }
+  },
+  {
+    "alt": "Bilbao in sunshine.",
+    "name": "sunshine-bilbao",
+    "description": "A sunny roundabout in Bilbao.",
+    "extension": "jpg",
+    "exif": {
+      "make": "Apple",
+      "model": "iPhone 15 Pro",
+      "lensMake": "Apple",
+      "lensModel": "iPhone 15 Pro back triple camera 9mm f/2.8",
+      "lat": "43 deg 15' 1.17\" N",
+      "lon": "2 deg 55' 0.33\" W"
+    }
+  },
+  {
+    "alt": "A cute orange cat.",
+    "name": "orange-cat",
+    "description": "A cute orange cat.",
+    "extension": "jpg",
+    "exif": {
+      "make": "Apple",
+      "model": "iPhone 15 Pro",
+      "lensMake": "Apple",
+      "lensModel": "iPhone 15 Pro back triple camera 9mm f/2.8",
+      "lat": "47 deg 33' 4.09\" N",
+      "lon": "19 deg 1' 56.34\" E"
+    }
+  },
+  {
+    "alt": "A winter walk in Budapest.",
+    "name": "bp-winter-1",
+    "description": "A wintery walk in Budapest.",
+    "extension": "jpg",
+    "exif": {
+      "make": "Apple",
+      "model": "iPhone 15 Pro",
+      "lensMake": "Apple",
+      "lensModel": "iPhone 15 Pro back triple camera 6.765mm f/1.78",
+      "lat": "47 deg 32' 32.42\" N",
+      "lon": "19 deg 2' 40.72\" E"
+    }
+  },
+  {
+    "alt": "Spring is coming.",
+    "name": "spring-is-coming",
+    "description": "Spring is coming.",
+    "extension": "jpg",
+    "exif": {
+      "make": "Apple",
+      "model": "iPhone 15 Pro",
+      "lensMake": "Apple",
+      "lensModel": "iPhone 15 Pro back triple camera 6.765mm f/1.78",
+      "lat": "47 deg 33' 8.51\" N",
+      "lon": "19 deg 2' 25.42\" E"
+    }
+  },
+  {
+    "alt": "A rainbow on the concrete.",
+    "name": "concrete-rainbow",
+    "description": "A rainbow on the concrete.",
+    "extension": "jpg",
+    "exif": {
+      "make": "Apple",
+      "model": "iPhone 15 Pro",
+      "lensMake": "Apple",
+      "lensModel": "iPhone 15 Pro back triple camera 6.765mm f/1.78",
+      "lat": "47 deg 31' 27.07\" N",
+      "lon": "19 deg 2' 12.74\" E"
+    }
+  },
+  {
+    "alt": "On the Margaret Bridge in Budapest.",
+    "name": "margaret-bridge-1",
+    "description": "Most 'Golden-est' hour on the Margaret Bridge in Budapest.",
+    "extension": "jpg",
+    "exif": {
+      "make": "Apple",
+      "model": "iPhone 15 Pro",
+      "lensMake": "Apple",
+      "lensModel": "iPhone 15 Pro back triple camera 6.765mm f/1.78",
+      "lat": "47 deg 30' 52.76\" N",
+      "lon": "19 deg 2' 35.70\" E"
+    }
+  },
+  {
+    "alt": "Ducks in Danube near Szentendre.",
+    "name": "ducks-danube",
+    "description": "ducks.",
+    "extension": "jpg",
+    "exif": {
+      "make": "Apple",
+      "model": "iPhone 15 Pro",
+      "lensMake": "Apple",
+      "lensModel": "iPhone 15 Pro back triple camera 9mm f/2.8",
+      "lat": "47 deg 39' 55.25\" N",
+      "lon": "19 deg 4' 45.51\" E"
+    }
+  },
+  {
+    "alt": "oil and wine.",
+    "name": "oil-and-wine",
+    "description": "what?",
+    "extension": "jpg",
+    "exif": {
+      "make": "Apple",
+      "model": "iPhone 15 Pro",
+      "lensMake": "Apple",
+      "lensModel": "iPhone 15 Pro back triple camera 2.22mm f/2.2",
+      "lat": "45 deg 48' 28.70\" N",
+      "lon": "20 deg 7' 53.14\" E"
+    }
+  }
+]

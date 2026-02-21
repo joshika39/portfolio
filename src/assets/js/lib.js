@@ -3,8 +3,7 @@ const imagesPath = "/assets/images/portfolio";
 export function constructFullPath(image) {
   return {
     ...image,
-    fullPath: `${imagesPath}/${image.name}.${image.extension}`,
-    thumbnail: `${imagesPath}/${image.name}-thumb.${image.extension}`,
+    path: `${imagesPath}/${image.name}.${image.extension}`,
   }
 }
 
@@ -20,7 +19,7 @@ export function createImageGallery(element, images) {
     createExifInfo(linkElement, image.exif);
 
     const imageElement = document.createElement("img");
-    imageElement.src = image.thumbnail;
+    imageElement.src = image.path;
     imageElement.alt = image.alt;
     imageElement.classList.add("gallery-image");
     imageElement.addEventListener("click", () => onImageClick(image));
@@ -54,7 +53,7 @@ const onImageClick = (image) => {
 
 
   const modalImage = document.createElement("img");
-  modalImage.src = image.fullPath;
+  modalImage.src = image.path;
   modalImage.alt = image.alt;
 
   const modalDescription = document.createElement("p");
@@ -82,17 +81,17 @@ function createExifInfo(parent, exif) {
     return;
   }
 
-  if (exif.Model) {
-    let modelText = exif.Model;
-    if (exif.Make && !modelText.toLowerCase().startsWith(exif.Make.toLowerCase())) {
-      modelText = `${exif.Make} ${modelText}`;
+  if (exif.make) {
+    let modelText = exif.model;
+    if (exif.make && !modelText.toLowerCase().startsWith(exif.make.toLowerCase())) {
+      modelText = `${exif.make} ${modelText}`;
     }
     createCameraInfo(parent, {src: "/assets/icons/camera.svg", alt: "Camera Icon"}, modelText);
   }
 
-  if (exif.LensModel) {
-    let lensText = exif.LensModel || "Unknown Lens";
-    lensText = lensText.replace(exif.Model, "").trim();
+  if (exif.lensModel) {
+    let lensText = exif.lensModel || "Unknown Lens";
+    lensText = lensText.replace(exif.model, "").trim();
     createCameraInfo(parent, {src: "/assets/icons/lens.svg", alt: "Lens Icon"}, lensText);
   }
 }
