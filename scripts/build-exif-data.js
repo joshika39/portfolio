@@ -18,8 +18,6 @@ execSync(
    "${INPUT_IMAGES_DIR}"`
 );
 
-console.log("✔ Images copied and stripped of EXIF");
-
 const exifRaw = execSync(
   `exiftool -json -r -ext jpg -ext jpeg -ext png \
    -Make -Model -LensMake -LensModel -GPSLatitude -GPSLongitude \
@@ -53,5 +51,3 @@ const result = source.map((photo) => {
 });
 
 fs.writeFileSync(OUTPUT_JSON, JSON.stringify(result, null, 2), "utf8");
-
-console.log(`✔ Wrote ${OUTPUT_JSON}`);
