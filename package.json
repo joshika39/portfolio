@@ -7,7 +7,8 @@
   "scripts": {
     "start": "eleventy --serve",
     "dev": "rm -rf _site && eleventy --serve",
-    "build": "rm -rf _site && eleventy"
+    "build": "rm -rf _site && eleventy",
+    "optimize": "jpegoptim --strip-all --max=75 source-photos/*.jpg"
   },
   "keywords": [],
   "author": "joshika39",

@@ -5,7 +5,7 @@ import path from "node:path";
 const SOURCE_JSON = "photos/photos-source.json";
 const OUTPUT_JSON = "src/assets/js/data/photos.json";
 
-const INPUT_IMAGES_DIR = "photos";
+const INPUT_IMAGES_DIR = "source-photos";
 const OUTPUT_IMAGES_DIR = "src/assets/images/portfolio";
 
 fs.mkdirSync(OUTPUT_IMAGES_DIR, {recursive: true});
