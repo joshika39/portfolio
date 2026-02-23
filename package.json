@@ -8,7 +8,7 @@
     "start": "eleventy --serve",
     "dev": "rm -rf _site && eleventy --serve",
     "build": "rm -rf _site && eleventy",
-    "optimize": "jpegoptim --strip-all --max=75 source-photos/*.jpg"
+    "import": "tsx scripts/import-photos.ts"
   },
   "keywords": [],
   "author": "joshika39",
@@ -17,5 +17,9 @@
   "dependencies": {
     "@11ty/eleventy": "^3.1.1",
     "clean-css": "^5.3.3"
+  },
+  "devDependencies": {
+    "@types/node": "^25.3.0",
+    "tsx": "^4.21.0"
   }
 }
