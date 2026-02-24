@@ -156,12 +156,27 @@
     "description": "乾杯",
     "extension": "jpg",
     "exif": {
-      "make": null,
-      "model": null,
-      "lensMake": null,
-      "lensModel": null,
-      "lat": null,
-      "lon": null
+      "make": "Apple",
+      "model": "iPhone 15 Pro",
+      "lensMake": "Apple",
+      "lensModel": "iPhone 15 Pro back triple camera 6.765mm f/1.78",
+      "lat": "47 deg 29' 27.44\" N",
+      "lon": "19 deg 3' 32.37\" E"
+    }
+  },
+  {
+    "type": "photo",
+    "alt": "Snow in Serbia.",
+    "name": "winter-2",
+    "description": "Snow in Serbia.",
+    "extension": "jpg",
+    "exif": {
+      "make": "Apple",
+      "model": "iPhone 15 Pro",
+      "lensMake": "Apple",
+      "lensModel": "iPhone 15 Pro back triple camera 6.765mm f/1.78",
+      "lat": "45 deg 55' 32.15\" N",
+      "lon": "20 deg 4' 45.67\" E"
     }
   },
   {
