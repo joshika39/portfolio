@@ -25,7 +25,7 @@ execSync(
    "${INPUT_IMAGES_DIR}"`
 );
 
-execSync(`jpegoptim --strip-all --max=75 "${OUTPUT_IMAGES_DIR}"/*.jpg`, {
+execSync(`jpegoptim --strip-all --max=75 "${INPUT_IMAGES_DIR}"/*.jpg`, {
     stdio: "inherit",
 });
 
@@ -100,5 +100,7 @@ for (const file of files) {
 const result = [...existing, ...newEntries];
 
 await fs.writeFile(OUTPUT_JSON, JSON.stringify(result, null, 2), "utf8");
+
+await fs.rm(INPUT_IMAGES_DIR, {recursive: true, force: true});
 
 console.log(`Added ${newEntries.length} new photos to ${OUTPUT_JSON}`);
