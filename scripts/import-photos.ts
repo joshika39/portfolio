@@ -17,22 +17,11 @@ async function fileExists(p: string) {
 
 await fs.mkdir(OUTPUT_IMAGES_DIR, {recursive: true});
 
-execSync(
-    `exiftool -r -ext jpg -ext jpeg -ext png \
-   -all= \
-   -tagsFromFile @ -Orientation -ICC_Profile \
-   -o "${OUTPUT_IMAGES_DIR}" \
-   "${INPUT_IMAGES_DIR}"`
-);
-
-execSync(`jpegoptim --strip-all --max=75 "${INPUT_IMAGES_DIR}"/*.jpg`, {
-    stdio: "inherit",
-});
 
 const exifRaw = execSync(
     `exiftool -json -r -ext jpg -ext jpeg -ext png \
    -Make -Model -LensMake -LensModel -GPSLatitude -GPSLongitude \
-   "${OUTPUT_IMAGES_DIR}"`
+   "${INPUT_IMAGES_DIR}"`
 ).toString();
 
 const exifList: any[] = JSON.parse(exifRaw);
@@ -71,13 +60,15 @@ const existingKeys = new Set(
     existing.map((p) => `${p.name}.${p.extension}`)
 );
 
-const files = await fs.readdir(OUTPUT_IMAGES_DIR);
+const files = await fs.readdir(INPUT_IMAGES_DIR);
 
 const newEntries: any[] = [];
 
 for (const file of files) {
     const ext = path.extname(file).replace(".", "").toLowerCase();
-    if (!["jpg", "jpeg", "png"].includes(ext)) continue;
+    if (!["jpg", "jpeg", "png"].includes(ext)) {
+        continue;
+    }
 
     const base = path.basename(file, path.extname(file));
     const key = `${base}.${ext}`;
@@ -89,18 +80,54 @@ for (const file of files) {
     const exif = exifByName.get(base) ?? null;
 
     newEntries.push({
+        type: "photo",
         alt: "CHANGE THIS",
         name: base,
         description: "CHANGE THIS",
         extension: ext,
         exif,
     });
+
+    await fs.copyFile(
+        path.join(INPUT_IMAGES_DIR, file),
+        path.join("photos", file)
+    );
 }
 
-const result = [...existing, ...newEntries];
+execSync(`jpegoptim --strip-all --max=75 "${INPUT_IMAGES_DIR}"/*.jpg`, {
+    stdio: "inherit",
+});
+
+execSync(
+    `exiftool -r -ext jpg -ext jpeg -ext png \
+   -all= \
+   -tagsFromFile @ -Orientation -ICC_Profile \
+   -o "${OUTPUT_IMAGES_DIR}" \
+   "${INPUT_IMAGES_DIR}"`
+);
+
+for (const file of files) {
+    const ext = path.extname(file).replace(".", "").toLowerCase();
+    if (!["jpg", "jpeg", "png"].includes(ext)) {
+        continue;
+    }
+
+    await fs.rm(path.join(INPUT_IMAGES_DIR, file));
+}
+
+
+function sortByType(a: any, b: any) {
+    if (a.type === b.type) {
+        return 0;
+    }
+    if (a.type === "photo") {
+        return -1;
+    }
+    return 1;
+}
+
+const result = [...existing, ...newEntries].sort(sortByType);
 
 await fs.writeFile(OUTPUT_JSON, JSON.stringify(result, null, 2), "utf8");
-
-await fs.rm(INPUT_IMAGES_DIR, {recursive: true, force: true});
 
 console.log(`Added ${newEntries.length} new photos to ${OUTPUT_JSON}`);
