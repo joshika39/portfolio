@@ -290,10 +290,6 @@ img {
     border-top-color: #333;
   }
 
-  img {
-    opacity: 0.95;
-  }
-
   ul li::before {
     color: #666;
   }
