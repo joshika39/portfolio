@@ -180,6 +180,21 @@
     }
   },
   {
+    "type": "photo",
+    "alt": "bp parliament",
+    "name": "parliament",
+    "description": "bp parliament",
+    "extension": "jpg",
+    "exif": {
+      "make": "Apple",
+      "model": "iPhone 15 Pro",
+      "lensMake": "Apple",
+      "lensModel": "iPhone 15 Pro back triple camera 6.765mm f/1.78",
+      "lat": "47 deg 30' 22.16\" N",
+      "lon": "19 deg 2' 22.36\" E"
+    }
+  },
+  {
     "type": "illustration",
     "alt": "my macbook wallpaper.",
     "name": "wp-gradient",
