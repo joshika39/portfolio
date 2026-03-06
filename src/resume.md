@@ -1,11 +1,6 @@
-# Resume
+# Hi there!
 
-I'm Joshua (joshika39), a software engineer based in Budapest. I enjoy working across a broad spectrum of technologies —
-from desktop and web development to IoT, the Apple ecosystem, and game engines like Unity, Unreal, and Godot.
-
-I’m also passionate about teaching and sharing knowledge. I regularly write articles and contribute to open source
-projects to help others grow in their programming journey. You’ll find a few highlighted projects below, and even more  
-on my [GitHub](https://github.com/joshika39) profile.
+I'm Joshua (__joshika39__), a software engineer with a lot of `csharp` and `react` experience.
 
 ## Open Source Projects
 

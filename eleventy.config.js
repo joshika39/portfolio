@@ -16,7 +16,6 @@ export default function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/assets/js");
   eleventyConfig.addPassthroughCopy("src/manifest.json");
   eleventyConfig.addPassthroughCopy("src/robots.txt");
-  eleventyConfig.addPassthroughCopy("src/resume.txt");
   eleventyConfig.addPassthroughCopy("src/resume.md");
 
   eleventyConfig.addFilter("cssmin", function (code) {
