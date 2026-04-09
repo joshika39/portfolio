@@ -195,6 +195,21 @@
     }
   },
   {
+    "type": "photo",
+    "alt": "sunset in Serbia.",
+    "name": "sunset-srb",
+    "description": "sunset in Serbia.",
+    "extension": "jpg",
+    "exif": {
+      "make": "FUJIFILM",
+      "model": "X-H2",
+      "lensMake": "FUJIFILM",
+      "lensModel": "XF50-140mmF2.8 R LM OIS WR",
+      "lat": null,
+      "lon": null
+    }
+  },
+  {
     "type": "illustration",
     "alt": "my macbook wallpaper.",
     "name": "wp-gradient",
