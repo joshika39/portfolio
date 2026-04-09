@@ -46,8 +46,8 @@
   },
   {
     "type": "photo",
-    "alt": "A cute orange cat.",
-    "name": "orange-cat",
+    "alt": "A cute ginger cat.",
+    "name": "ginger-cat",
     "description": "A cute orange cat.",
     "extension": "jpg",
     "exif": {
@@ -181,9 +181,9 @@
   },
   {
     "type": "photo",
-    "alt": "bp parliament",
+    "alt": "Budapest parliament",
     "name": "parliament",
-    "description": "bp parliament",
+    "description": "Budapest parliament",
     "extension": "jpg",
     "exif": {
       "make": "Apple",
