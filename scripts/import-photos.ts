@@ -83,6 +83,7 @@ for (const file of files) {
         type: "photo",
         alt: "CHANGE THIS",
         name: base,
+        category: "CHANGE THIS",
         description: "CHANGE THIS",
         extension: ext,
         exif,
