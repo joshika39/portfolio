@@ -210,6 +210,21 @@
     }
   },
   {
+    "type": "photo",
+    "alt": "sunny walk",
+    "name": "sunshine",
+    "description": "sunny walk",
+    "extension": "jpg",
+    "exif": {
+      "make": "Apple",
+      "model": "iPhone 15 Pro",
+      "lensMake": "Apple",
+      "lensModel": "iPhone 15 Pro back triple camera 6.765mm f/1.78",
+      "lat": "47 deg 33' 32.61\" N",
+      "lon": "19 deg 3' 23.26\" E"
+    }
+  },
+  {
     "type": "illustration",
     "alt": "my macbook wallpaper.",
     "name": "wp-gradient",
