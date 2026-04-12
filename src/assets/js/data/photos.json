@@ -5,6 +5,7 @@
     "name": "ahoy-captain",
     "description": "HYROX Team in a break.",
     "extension": "jpg",
+    "category": "HYROX",
     "exif": {
       "make": "Canon",
       "model": "Canon EOS R6",
@@ -18,6 +19,7 @@
     "type": "photo",
     "alt": "Sun shining behind a HYROX wallball.",
     "name": "wallball-in-the-sun",
+    "category": "HYROX",
     "description": "SUNNY wallball",
     "extension": "jpg",
     "exif": {
@@ -32,6 +34,7 @@
   {
     "type": "photo",
     "alt": "Bilbao in sunshine.",
+    "category": "Travel",
     "name": "sunshine-bilbao",
     "description": "A sunny roundabout in Bilbao.",
     "extension": "jpg",
@@ -48,6 +51,7 @@
     "type": "photo",
     "alt": "A cute ginger cat.",
     "name": "ginger-cat",
+    "category": "Pets",
     "description": "A cute orange cat.",
     "extension": "jpg",
     "exif": {
@@ -63,6 +67,7 @@
     "type": "photo",
     "alt": "A winter walk in Budapest.",
     "name": "bp-winter-1",
+    "category": "Hungary",
     "description": "A wintery walk in Budapest.",
     "extension": "jpg",
     "exif": {
@@ -77,6 +82,7 @@
   {
     "type": "photo",
     "alt": "Spring is coming.",
+    "category": "Hungary",
     "name": "spring-is-coming",
     "description": "Spring is coming.",
     "extension": "jpg",
@@ -93,6 +99,7 @@
     "type": "photo",
     "alt": "A rainbow on the concrete.",
     "name": "concrete-rainbow",
+    "category": "Hungary",
     "description": "A rainbow on the concrete.",
     "extension": "jpg",
     "exif": {
@@ -108,6 +115,7 @@
     "type": "photo",
     "alt": "On the Margaret Bridge in Budapest.",
     "name": "margaret-bridge-1",
+    "category": "Hungary",
     "description": "Most 'Golden-est' hour on the Margaret Bridge in Budapest.",
     "extension": "jpg",
     "exif": {
@@ -122,6 +130,7 @@
   {
     "type": "photo",
     "alt": "Ducks in Danube near Szentendre.",
+    "category": "Hungary",
     "name": "ducks-danube",
     "description": "ducks.",
     "extension": "jpg",
@@ -138,6 +147,7 @@
     "type": "photo",
     "alt": "oil and wine.",
     "name": "oil-and-wine",
+    "category": "Food",
     "description": "what?",
     "extension": "jpg",
     "exif": {
@@ -152,6 +162,7 @@
   {
     "type": "photo",
     "alt": "Near Ferenciek's Square in Budapest.",
+    "category": "Hungary",
     "name": "vendiak",
     "description": "乾杯",
     "extension": "jpg",
@@ -167,6 +178,7 @@
   {
     "type": "photo",
     "alt": "Snow in Serbia.",
+    "category": "Serbia",
     "name": "winter-2",
     "description": "Snow in Serbia.",
     "extension": "jpg",
@@ -182,6 +194,7 @@
   {
     "type": "photo",
     "alt": "Budapest parliament",
+    "category": "Hungary",
     "name": "parliament",
     "description": "Budapest parliament",
     "extension": "jpg",
@@ -197,6 +210,7 @@
   {
     "type": "photo",
     "alt": "sunset in Serbia.",
+    "category": "Serbia",
     "name": "sunset-srb",
     "description": "sunset in Serbia.",
     "extension": "jpg",
@@ -212,6 +226,7 @@
   {
     "type": "photo",
     "alt": "sunny walk",
+    "category": "Hungary",
     "name": "sunshine",
     "description": "sunny walk",
     "extension": "jpg",

@@ -7,32 +7,57 @@ export function constructFullPath(image) {
   }
 }
 
+function groupByCategory(images) {
+  return images.reduce((acc, image) => {
+    const category = image.category || "Other";
+
+    if (!acc[category]) {
+      acc[category] = [];
+    }
+
+    acc[category].push(image);
+    return acc;
+  }, {});
+}
+
 export function createImageGallery(element, images) {
-  if (!element) {
-    return;
-  }
+  if (!element) return;
 
-  for (let i = 0; i < images.length; i++) {
-    const image = images[i];
-    const linkElement = document.createElement("li");
+  const grouped = groupByCategory(images);
 
-    createExifInfo(linkElement, image.exif);
+  Object.entries(grouped).forEach(([category, images]) => {
+    const section = document.createElement("div");
+    section.classList.add("gallery-section");
 
-    const imageElement = document.createElement("img");
-    imageElement.src = image.path;
-    imageElement.alt = image.alt;
-    imageElement.classList.add("gallery-image");
-    imageElement.addEventListener("click", () => onImageClick(image));
-    linkElement.appendChild(imageElement);
+    const title = document.createElement("h3");
+    title.textContent = category;
 
-    const descriptionElement = document.createElement("p");
-    descriptionElement.classList.add("description");
-    descriptionElement.textContent = image.description;
-    linkElement.appendChild(descriptionElement);
+    const list = document.createElement("ul");
+    list.classList.add("gallery-section-content");
+    images.forEach((image) => {
+      const item = document.createElement("li");
 
+      createExifInfo(item, image.exif);
 
-    element.appendChild(linkElement);
-  }
+      const img = document.createElement("img");
+      img.src = image.path;
+      img.alt = image.alt;
+      img.classList.add("gallery-image");
+      img.addEventListener("click", () => onImageClick(image));
+
+      const desc = document.createElement("p");
+      desc.classList.add("description");
+      desc.textContent = image.description;
+
+      item.appendChild(img);
+      item.appendChild(desc);
+      list.appendChild(item);
+    });
+
+    section.appendChild(title);
+    section.appendChild(list);
+    element.appendChild(section);
+  });
 }
 
 const onImageClick = (image) => {
@@ -106,7 +131,6 @@ function createCameraInfo(parent, icon, text) {
   infoContainer.appendChild(iconElement);
 
   const textElement = document.createElement("p");
-  textElement.classList.add("camera-model");
   textElement.textContent = text;
   infoContainer.appendChild(textElement);
 
