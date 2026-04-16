@@ -240,6 +240,22 @@
     }
   },
   {
+    "type": "photo",
+    "alt": "luminapark 2026",
+    "name": "luminapark",
+    "category": "Hungary",
+    "description": "luminapark 2026",
+    "extension": "jpg",
+    "exif": {
+      "make": "FUJIFILM",
+      "model": "X-H2",
+      "lensMake": "FUJIFILM",
+      "lensModel": "XF16-50mmF2.8-4.8 R LM WR",
+      "lat": null,
+      "lon": null
+    }
+  },
+  {
     "type": "illustration",
     "alt": "my macbook wallpaper.",
     "name": "wp-gradient",
