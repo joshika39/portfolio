@@ -82,7 +82,7 @@
   {
     "type": "photo",
     "alt": "Spring is coming.",
-    "category": "Hungary",
+    "category": "Lidl in Seasons",
     "name": "spring-is-coming",
     "description": "Spring is coming.",
     "extension": "jpg",
@@ -253,6 +253,22 @@
       "lensModel": "XF16-50mmF2.8-4.8 R LM WR",
       "lat": null,
       "lon": null
+    }
+  },
+  {
+    "type": "photo",
+    "alt": "Lidl in the spring",
+    "name": "summer-is-coming",
+    "category": "Lidl in Seasons",
+    "description": "Lidl in the spring",
+    "extension": "jpeg",
+    "exif": {
+      "make": "Apple",
+      "model": "iPhone 15 Pro",
+      "lensMake": "Apple",
+      "lensModel": "iPhone 15 Pro back triple camera 6.765mm f/1.78",
+      "lat": "47 deg 33' 8.43\" N",
+      "lon": "19 deg 2' 25.68\" E"
     }
   },
   {
