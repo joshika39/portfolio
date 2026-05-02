@@ -51,7 +51,7 @@
     "type": "photo",
     "alt": "A cute ginger cat.",
     "name": "ginger-cat",
-    "category": "Pets",
+    "category": "Cats",
     "description": "A cute orange cat.",
     "extension": "jpg",
     "exif": {
@@ -269,6 +269,22 @@
       "lensModel": "iPhone 15 Pro back triple camera 6.765mm f/1.78",
       "lat": "47 deg 33' 8.43\" N",
       "lon": "19 deg 2' 25.68\" E"
+    }
+  },
+  {
+    "type": "photo",
+    "alt": "cat one",
+    "name": "cat",
+    "category": "Cats",
+    "description": "cat one",
+    "extension": "jpeg",
+    "exif": {
+      "make": "FUJIFILM",
+      "model": "X-H2",
+      "lensMake": "FUJIFILM",
+      "lensModel": "XF50-140mmF2.8 R LM OIS WR",
+      "lat": null,
+      "lon": null
     }
   },
   {
