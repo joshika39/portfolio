@@ -288,6 +288,38 @@
     }
   },
   {
+    "type": "photo",
+    "alt": "CHANGE THIS",
+    "name": "boat",
+    "category": "CHANGE THIS",
+    "description": "CHANGE THIS",
+    "extension": "jpeg",
+    "exif": {
+      "make": "Apple",
+      "model": "iPhone 15 Pro",
+      "lensMake": "Apple",
+      "lensModel": "iPhone 15 Pro back triple camera 9mm f/2.8",
+      "lat": "46 deg 5' 51.00\" N",
+      "lon": "19 deg 45' 45.40\" E"
+    }
+  },
+  {
+    "type": "photo",
+    "alt": "CHANGE THIS",
+    "name": "palic-lunapark",
+    "category": "CHANGE THIS",
+    "description": "CHANGE THIS",
+    "extension": "jpeg",
+    "exif": {
+      "make": "Apple",
+      "model": "iPhone 15 Pro",
+      "lensMake": "Apple",
+      "lensModel": "iPhone 15 Pro back triple camera 9mm f/2.8",
+      "lat": "46 deg 5' 51.25\" N",
+      "lon": "19 deg 45' 42.66\" E"
+    }
+  },
+  {
     "type": "illustration",
     "alt": "my macbook wallpaper.",
     "name": "wp-gradient",
