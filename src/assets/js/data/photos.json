@@ -289,10 +289,10 @@
   },
   {
     "type": "photo",
-    "alt": "CHANGE THIS",
+    "alt": "boat",
     "name": "boat",
-    "category": "CHANGE THIS",
-    "description": "CHANGE THIS",
+    "category": "Serbia",
+    "description": "boat in lake of Palic",
     "extension": "jpeg",
     "exif": {
       "make": "Apple",
@@ -305,10 +305,10 @@
   },
   {
     "type": "photo",
-    "alt": "CHANGE THIS",
+    "alt": "amusement park",
     "name": "palic-lunapark",
-    "category": "CHANGE THIS",
-    "description": "CHANGE THIS",
+    "category": "Serbia",
+    "description": "Amusement park in Palic, Serbia.",
     "extension": "jpeg",
     "exif": {
       "make": "Apple",
