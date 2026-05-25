@@ -320,6 +320,54 @@
     }
   },
   {
+    "type": "photo",
+    "alt": "Waterfall on Margaret Island in Budapest.",
+    "name": "DSCF7491",
+    "category": "Margaret Island",
+    "description": "waterfall",
+    "extension": "jpg",
+    "exif": {
+      "make": "FUJIFILM",
+      "model": "X-H2",
+      "lensMake": "FUJIFILM",
+      "lensModel": "XF50-140mmF2.8 R LM OIS WR",
+      "lat": null,
+      "lon": null
+    }
+  },
+  {
+    "type": "photo",
+    "alt": "Waterfall on Margaret Island in Budapest.",
+    "name": "DSCF7514",
+    "category": "Margaret Island",
+    "description": "waterfall",
+    "extension": "jpg",
+    "exif": {
+      "make": "FUJIFILM",
+      "model": "X-H2",
+      "lensMake": "FUJIFILM",
+      "lensModel": "XF50-140mmF2.8 R LM OIS WR",
+      "lat": null,
+      "lon": null
+    }
+  },
+  {
+    "type": "photo",
+    "alt": "Waterfall on Margaret Island in Budapest.",
+    "name": "DSCF7531",
+    "category": "Margaret Island",
+    "description": "waterfall",
+    "extension": "jpg",
+    "exif": {
+      "make": "FUJIFILM",
+      "model": "X-H2",
+      "lensMake": "FUJIFILM",
+      "lensModel": "XF16-50mmF2.8-4.8 R LM WR",
+      "lat": null,
+      "lon": null
+    }
+  },
+  {
     "type": "illustration",
     "alt": "my macbook wallpaper.",
     "name": "wp-gradient",
