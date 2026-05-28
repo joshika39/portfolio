@@ -368,6 +368,22 @@
     }
   },
   {
+    "type": "photo",
+    "alt": "cute cat 1",
+    "name": "DSCF7694.JPG",
+    "category": "Cats",
+    "description": "cute cat 1",
+    "extension": "jpg",
+    "exif": {
+      "make": "FUJIFILM",
+      "model": "X-H2",
+      "lensMake": "FUJIFILM",
+      "lensModel": "XF50-140mmF2.8 R LM OIS WR",
+      "lat": null,
+      "lon": null
+    }
+  },
+  {
     "type": "illustration",
     "alt": "my macbook wallpaper.",
     "name": "wp-gradient",
