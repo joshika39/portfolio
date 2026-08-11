@@ -384,6 +384,86 @@
     }
   },
   {
+    "type": "photo",
+    "alt": "鴨",
+    "name": "kamo-1",
+    "category": "日本",
+    "description": "鴨",
+    "extension": "jpg",
+    "exif": {
+      "make": "FUJIFILM",
+      "model": "X-H2",
+      "lensMake": "FUJIFILM",
+      "lensModel": "XF50-140mmF2.8 R LM OIS WR",
+      "lat": "35 deg 43' 11.42\" N",
+      "lon": "139 deg 58' 16.73\" E"
+    }
+  },
+  {
+    "type": "photo",
+    "alt": "谷中で撮った車",
+    "name": "kuruma-1",
+    "category": "日本",
+    "description": "谷中で撮った車",
+    "extension": "jpg",
+    "exif": {
+      "make": "FUJIFILM",
+      "model": "X-H2",
+      "lensMake": "FUJIFILM",
+      "lensModel": "XF16-50mmF2.8-4.8 R LM WR",
+      "lat": null,
+      "lon": null
+    }
+  },
+  {
+    "type": "photo",
+    "alt": "谷中で撮った車",
+    "name": "kuruma-2",
+    "category": "日本",
+    "description": "谷中で撮った車",
+    "extension": "jpg",
+    "exif": {
+      "make": "FUJIFILM",
+      "model": "X-H2",
+      "lensMake": "FUJIFILM",
+      "lensModel": "XF16-50mmF2.8-4.8 R LM WR",
+      "lat": null,
+      "lon": null
+    }
+  },
+  {
+    "type": "photo",
+    "alt": "東京",
+    "name": "tokyo-1",
+    "category": "日本",
+    "description": "東京",
+    "extension": "jpg",
+    "exif": {
+      "make": "FUJIFILM",
+      "model": "X-H2",
+      "lensMake": "FUJIFILM",
+      "lensModel": "XF16-50mmF2.8-4.8 R LM WR",
+      "lat": null,
+      "lon": null
+    }
+  },
+  {
+    "type": "photo",
+    "alt": "谷中",
+    "name": "yanaka-1",
+    "category": "日本",
+    "description": "谷中",
+    "extension": "jpg",
+    "exif": {
+      "make": "FUJIFILM",
+      "model": "X-H2",
+      "lensMake": "FUJIFILM",
+      "lensModel": "XF16-50mmF2.8-4.8 R LM WR",
+      "lat": null,
+      "lon": null
+    }
+  },
+  {
     "type": "illustration",
     "alt": "my macbook wallpaper.",
     "name": "wp-gradient",
