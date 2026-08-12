@@ -387,7 +387,7 @@
     "type": "photo",
     "alt": "鴨",
     "name": "kamo-1",
-    "category": "日本",
+    "category": "日本2026年",
     "description": "鴨",
     "extension": "jpg",
     "exif": {
@@ -403,7 +403,7 @@
     "type": "photo",
     "alt": "谷中で撮った車",
     "name": "kuruma-1",
-    "category": "日本",
+    "category": "日本2026年",
     "description": "谷中で撮った車",
     "extension": "jpg",
     "exif": {
@@ -419,7 +419,7 @@
     "type": "photo",
     "alt": "谷中で撮った車",
     "name": "kuruma-2",
-    "category": "日本",
+    "category": "日本2026年",
     "description": "谷中で撮った車",
     "extension": "jpg",
     "exif": {
@@ -435,7 +435,7 @@
     "type": "photo",
     "alt": "東京",
     "name": "tokyo-1",
-    "category": "日本",
+    "category": "日本2026年",
     "description": "東京",
     "extension": "jpg",
     "exif": {
@@ -451,8 +451,24 @@
     "type": "photo",
     "alt": "谷中",
     "name": "yanaka-1",
-    "category": "日本",
+    "category": "日本2026年",
     "description": "谷中",
+    "extension": "jpg",
+    "exif": {
+      "make": "FUJIFILM",
+      "model": "X-H2",
+      "lensMake": "FUJIFILM",
+      "lensModel": "XF16-50mmF2.8-4.8 R LM WR",
+      "lat": null,
+      "lon": null
+    }
+  },
+  {
+    "type": "photo",
+    "alt": "新幹線で撮った写真",
+    "name": "shinkansen",
+    "category": "日本2026年",
+    "description": "新幹線で撮った写真",
     "extension": "jpg",
     "exif": {
       "make": "FUJIFILM",
