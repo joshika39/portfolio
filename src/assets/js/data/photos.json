@@ -592,6 +592,166 @@
     }
   },
   {
+    "type": "photo",
+    "alt": "京都",
+    "name": "kyouto-1",
+    "category": "日本2026年",
+    "description": "京都",
+    "extension": "jpg",
+    "exif": {
+      "make": "FUJIFILM",
+      "model": "X-H2",
+      "lensMake": "FUJIFILM",
+      "lensModel": "XF16-50mmF2.8-4.8 R LM WR",
+      "lat": null,
+      "lon": null
+    }
+  },
+  {
+    "type": "photo",
+    "alt": "京都",
+    "name": "kyouto-2",
+    "category": "日本2026年",
+    "description": "京都",
+    "extension": "jpg",
+    "exif": {
+      "make": "FUJIFILM",
+      "model": "X-H2",
+      "lensMake": "FUJIFILM",
+      "lensModel": "XF16-50mmF2.8-4.8 R LM WR",
+      "lat": null,
+      "lon": null
+    }
+  },
+  {
+    "type": "photo",
+    "alt": "京都",
+    "name": "kyouto-3",
+    "category": "日本2026年",
+    "description": "京都",
+    "extension": "jpg",
+    "exif": {
+      "make": "FUJIFILM",
+      "model": "X-H2",
+      "lensMake": "FUJIFILM",
+      "lensModel": "XF16-50mmF2.8-4.8 R LM WR",
+      "lat": null,
+      "lon": null
+    }
+  },
+  {
+    "type": "photo",
+    "alt": "京都",
+    "name": "kyouto-4",
+    "category": "日本2026年",
+    "description": "京都",
+    "extension": "jpg",
+    "exif": {
+      "make": "FUJIFILM",
+      "model": "X-H2",
+      "lensMake": "FUJIFILM",
+      "lensModel": "XF16-50mmF2.8-4.8 R LM WR",
+      "lat": null,
+      "lon": null
+    }
+  },
+  {
+    "type": "photo",
+    "alt": "京都御所",
+    "name": "kyouto-gosho-1",
+    "category": "日本2026年",
+    "description": "京都御所",
+    "extension": "jpg",
+    "exif": {
+      "make": "FUJIFILM",
+      "model": "X-H2",
+      "lensMake": "FUJIFILM",
+      "lensModel": "XF16-50mmF2.8-4.8 R LM WR",
+      "lat": null,
+      "lon": null
+    }
+  },
+  {
+    "type": "photo",
+    "alt": "京都御所",
+    "name": "kyouto-gosho-2",
+    "category": "日本2026年",
+    "description": "京都御所",
+    "extension": "jpg",
+    "exif": {
+      "make": "FUJIFILM",
+      "model": "X-H2",
+      "lensMake": "FUJIFILM",
+      "lensModel": "XF16-50mmF2.8-4.8 R LM WR",
+      "lat": null,
+      "lon": null
+    }
+  },
+  {
+    "type": "photo",
+    "alt": "京都御所",
+    "name": "kyouto-gosho-3",
+    "category": "日本2026年",
+    "description": "京都御所",
+    "extension": "jpg",
+    "exif": {
+      "make": "FUJIFILM",
+      "model": "X-H2",
+      "lensMake": "FUJIFILM",
+      "lensModel": "XF16-50mmF2.8-4.8 R LM WR",
+      "lat": null,
+      "lon": null
+    }
+  },
+  {
+    "type": "photo",
+    "alt": "京都御所",
+    "name": "kyouto-gosho-4",
+    "category": "日本2026年",
+    "description": "京都御所",
+    "extension": "jpg",
+    "exif": {
+      "make": "FUJIFILM",
+      "model": "X-H2",
+      "lensMake": "FUJIFILM",
+      "lensModel": "XF16-50mmF2.8-4.8 R LM WR",
+      "lat": null,
+      "lon": null
+    }
+  },
+  {
+    "type": "photo",
+    "alt": "京都御所",
+    "name": "kyouto-gosho-5",
+    "category": "日本2026年",
+    "description": "京都御所",
+    "extension": "jpg",
+    "exif": {
+      "make": "FUJIFILM",
+      "model": "X-H2",
+      "lensMake": "FUJIFILM",
+      "lensModel": "XF16-50mmF2.8-4.8 R LM WR",
+      "lat": null,
+      "lon": null
+    }
+  },
+  {
+    "type": "photo",
+    "alt": "京都御所",
+    "name": "kyouto-gosho-6",
+    "category": "日本2026年",
+    "description": "京都御所",
+    "extension": "jpg",
+    "exif": {
+      "make": "FUJIFILM",
+      "model": "X-H2",
+      "lensMake": "FUJIFILM",
+      "lensModel": "XF16-50mmF2.8-4.8 R LM WR",
+      "lat": null,
+      "lon": null
+    }
+  },
+  {
     "type": "illustration",
     "alt": "my macbook wallpaper.",
     "name": "wp-gradient",
