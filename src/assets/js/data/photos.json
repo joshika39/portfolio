@@ -752,6 +752,118 @@
     }
   },
   {
+    "type": "photo",
+    "alt": "熱海",
+    "category": "日本2026年",
+    "description": "熱海",
+    "name": "atami-1",
+    "extension": "jpg",
+    "exif": {
+      "make": "FUJIFILM",
+      "model": "X-H2",
+      "lensMake": "FUJIFILM",
+      "lensModel": "XF16-50mmF2.8-4.8 R LM WR",
+      "lat": null,
+      "lon": null
+    }
+  },
+  {
+    "type": "photo",
+    "alt": "熱海",
+    "category": "日本2026年",
+    "description": "熱海",
+    "name": "atami-2",
+    "extension": "jpg",
+    "exif": {
+      "make": "FUJIFILM",
+      "model": "X-H2",
+      "lensMake": "FUJIFILM",
+      "lensModel": "XF16-50mmF2.8-4.8 R LM WR",
+      "lat": null,
+      "lon": null
+    }
+  },
+  {
+    "type": "photo",
+    "alt": "熱海",
+    "description": "熱海",
+    "name": "atami-3",
+    "category": "日本2026年",
+    "extension": "jpg",
+    "exif": {
+      "make": "FUJIFILM",
+      "model": "X-H2",
+      "lensMake": "FUJIFILM",
+      "lensModel": "XF16-50mmF2.8-4.8 R LM WR",
+      "lat": "35 deg 6' 10.52\" N",
+      "lon": "139 deg 4' 40.26\" E"
+    }
+  },
+  {
+    "type": "photo",
+    "alt": "熱海",
+    "category": "日本2026年",
+    "description": "熱海",
+    "name": "atami-4",
+    "extension": "jpg",
+    "exif": {
+      "make": "FUJIFILM",
+      "model": "X-H2",
+      "lensMake": "FUJIFILM",
+      "lensModel": "XF50-140mmF2.8 R LM OIS WR",
+      "lat": "35 deg 5' 52.10\" N",
+      "lon": "139 deg 4' 34.56\" E"
+    }
+  },
+  {
+    "type": "photo",
+    "name": "atami-5",
+    "alt": "熱海",
+    "category": "日本2026年",
+    "description": "熱海",
+    "extension": "jpg",
+    "exif": {
+      "make": "FUJIFILM",
+      "model": "X-H2",
+      "lensMake": "FUJIFILM",
+      "lensModel": "XF16-50mmF2.8-4.8 R LM WR",
+      "lat": "35 deg 5' 52.18\" N",
+      "lon": "139 deg 4' 34.49\" E"
+    }
+  },
+  {
+    "type": "photo",
+    "alt": "熱海早い車",
+    "name": "atami-hayai-kurma-1",
+    "category": "日本2026年",
+    "description": "熱海早い車",
+    "extension": "jpg",
+    "exif": {
+      "make": "FUJIFILM",
+      "model": "X-H2",
+      "lensMake": "FUJIFILM",
+      "lensModel": "XF16-50mmF2.8-4.8 R LM WR",
+      "lat": "35 deg 6' 10.52\" N",
+      "lon": "139 deg 4' 40.26\" E"
+    }
+  },
+  {
+    "type": "photo",
+    "alt": "熱海早い車",
+    "name": "atami-hayai-kurma-2",
+    "category": "日本2026年",
+    "description": "熱海早い車",
+    "extension": "jpg",
+    "exif": {
+      "make": "FUJIFILM",
+      "model": "X-H2",
+      "lensMake": "FUJIFILM",
+      "lensModel": "XF16-50mmF2.8-4.8 R LM WR",
+      "lat": "35 deg 6' 10.52\" N",
+      "lon": "139 deg 4' 40.26\" E"
+    }
+  },
+  {
     "type": "illustration",
     "alt": "my macbook wallpaper.",
     "name": "wp-gradient",
